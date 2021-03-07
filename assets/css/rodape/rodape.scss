@@ -1,0 +1,62 @@
+@import '../base/fonts';
+@import '../base/cores';
+@import '../base/mixins';
+
+.rodape {
+    @include flex;
+    @include default;
+    margin: 0;
+    padding: 9rem;
+    background-color: $azul-muitoEscuro;
+
+    .nav__itens {
+        text-decoration: none;
+        margin-top: 3rem;
+        .nav__lista {
+            display: flex;
+            .lista__item {
+                .lista__link {
+                    color: white;
+                }
+
+                margin-right: 3rem;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    .rodape__redeSociais {
+        margin: 3rem 0;
+    }
+    .rodape__texto {
+        color: white;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .rodape {
+        padding: 0.5rem; //
+
+        .nav__itens {
+            .nav__lista {
+                @include flex; //
+
+                .lista__item {
+                    margin-right: 0rem; //
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+
+        .rodape__redeSociais {
+            margin: 3rem 0;
+        }
+        .rodape__texto {
+            font-size: 0.8rem;
+            color: white;
+        }
+    }
+}

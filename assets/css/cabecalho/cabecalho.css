@@ -1,0 +1,237 @@
+.cabecalho {
+  background-color: #fdfdfd;
+}
+
+.cabecalho__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 6rem 15rem 3rem 15rem;
+}
+
+.cabecalho__nav .nav__itens {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.cabecalho__nav .nav__itens .nav__lista {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.cabecalho__nav .nav__itens .nav__lista .lista__item {
+  margin-right: 3rem;
+}
+
+.cabecalho__nav .nav__itens .nav__lista .lista__item:last-child {
+  margin-right: 0;
+}
+
+.cabecalho__apresentacao {
+  font-family: "Poppins", sans-serif;
+  background-image: url("../../img/apresentacao_background.png"), url("../../img/apresentacao_background2.png");
+  background-repeat: no-repeat, repeat;
+  background-position: bottom;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cabecalho__apresentacao .apresentacao__appApresentacao {
+  width: 50vw;
+  margin-right: 3rem;
+}
+
+.cabecalho__apresentacao .apresentacao__appApresentacao .appApresentacao__editor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-right: 1.5rem;
+  background-color: #edf3fa;
+  border-radius: 1.5rem;
+}
+
+.cabecalho__apresentacao .apresentacao__appApresentacao .appApresentacao__editor::before {
+  content: url("../../img/check-icon.png");
+  background-color: #feaa25;
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+  margin-right: 1rem;
+}
+
+.cabecalho__apresentacao .apresentacao__appApresentacao .appApresentacao__titulo {
+  color: #242f51;
+  font-size: 5rem;
+  font-weight: 500;
+  line-height: 6rem;
+  margin: 3rem 0;
+}
+
+.cabecalho__apresentacao .apresentacao__appApresentacao .appApresentacao__texto {
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: #9b9ca0;
+  margin: 1.5rem 0 5rem 0;
+}
+
+.cabecalho__apresentacao .appApresentacao__botoes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cabecalho__apresentacao .appApresentacao__botoes .botoes__texto {
+  margin-right: 3rem;
+}
+
+.cabecalho__apresentacao .appApresentacao__botoes .botoes__texto .botoes__link {
+  color: #2500f9;
+}
+
+.TFFstyle {
+  font-weight: 700;
+  outline-style: none;
+  border-style: none;
+  padding: 1rem 2rem;
+  background-color: #2500f9;
+  border-radius: 2rem;
+  color: white;
+}
+
+.TFFstyle:active {
+  background-color: #1a00ad;
+}
+
+@media screen and (max-width: 1300px) {
+  .cabecalho__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    padding-top: 1.5rem;
+  }
+  .cabecalho__nav .nav__img {
+    margin: 5rem 0;
+  }
+  .cabecalho__nav .nav__itens .nav__lista {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cabecalho__nav .nav__itens .nav__lista .lista__item {
+    font-size: 1.5rem;
+    margin-right: 0rem;
+    margin-bottom: 3rem;
+  }
+  .cabecalho__apresentacao {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cabecalho__apresentacao .apresentacao__appApresentacao {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-right: 0rem;
+  }
+  .cabecalho__apresentacao .apresentacao__appApresentacao .appApresentacao__editor {
+    margin-top: 5rem;
+  }
+  .cabecalho__apresentacao .apresentacao__appApresentacao .appApresentacao__titulo {
+    width: 100%;
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .cabecalho__apresentacao .apresentacao__appApresentacao .appApresentacao__texto {
+    font-size: 1.25rem;
+  }
+  .cabecalho__apresentacao .appApresentacao__botoes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cabecalho__apresentacao .appApresentacao__botoes .botoes__texto {
+    margin-right: 0rem;
+    margin-top: 5rem;
+  }
+  .cabecalho__apresentacao .appApresentacao__botoes .botoes__texto:first-child {
+    margin-top: 0;
+  }
+  .cabecalho__apresentacao .cabecalho__apresentacao--img {
+    width: 250px;
+  }
+}
+/*# sourceMappingURL=cabecalho.css.map */

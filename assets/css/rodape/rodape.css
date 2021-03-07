@@ -1,0 +1,85 @@
+.rodape {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5rem;
+  margin-top: 6rem;
+  margin: 0;
+  padding: 9rem;
+  background-color: #09142e;
+}
+
+.rodape .nav__itens {
+  text-decoration: none;
+  margin-top: 3rem;
+}
+
+.rodape .nav__itens .nav__lista {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.rodape .nav__itens .nav__lista .lista__item {
+  margin-right: 3rem;
+}
+
+.rodape .nav__itens .nav__lista .lista__item .lista__link {
+  color: white;
+}
+
+.rodape .nav__itens .nav__lista .lista__item:last-child {
+  margin-right: 0;
+}
+
+.rodape .rodape__redeSociais {
+  margin: 3rem 0;
+}
+
+.rodape .rodape__texto {
+  color: white;
+}
+
+@media screen and (max-width: 1300px) {
+  .rodape {
+    padding: 0.5rem;
+  }
+  .rodape .nav__itens .nav__lista {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .rodape .nav__itens .nav__lista .lista__item {
+    margin-right: 0rem;
+    margin-bottom: 2rem;
+  }
+  .rodape .rodape__redeSociais {
+    margin: 3rem 0;
+  }
+  .rodape .rodape__texto {
+    font-size: 0.8rem;
+    color: white;
+  }
+}
+/*# sourceMappingURL=rodape.css.map */
